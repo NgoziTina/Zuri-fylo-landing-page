@@ -100,7 +100,10 @@ button {
 
 .second-hero-section {
   margin: 0;
-  background: url("./images/bg-curve-desktop.svg") no-repeat center cover;
+  background: url("./images/bg-curve-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 6rem;
 }
 
@@ -123,7 +126,7 @@ button {
   margin-top: 3rem;
 }
 
-.testimonial p {
+.testimonial p{
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.5rem;
@@ -132,13 +135,13 @@ button {
 .foot {
   display: flex;
   align-items: center;
-  margin: 0.2rem 0;
+   margin: 0.2rem 0; 
 }
 
 .foot img {
-  width: 4rem;
+   width: 4rem;
   height: 4rem;
-  border-radius: 100%;
+  border-radius: 100%; 
 }
 
 .foot-content {
@@ -148,14 +151,10 @@ button {
   font-size: 1rem;
 }
 
-.foot-content p {
-  padding-top: 0.5rem !important;
+.foot-content p{
+  padding-top: 0.5rem;
   font-size: 0.8rem;
 }
-
-
-/* This is the styling for the third hero section */
-
 .third-hero-section{
 	margin: 4rem 0 0;
 	background-color: hsl(238, 22%, 44%);
@@ -172,26 +171,22 @@ button {
 }
 
 .third-hero-left h3{
-	font-size: 1.5rem;
-	padding-bottom: 1.5rem;
+	font-size: 1.5rem ;
+	padding-bottom: 1.5rem ;
 }
 
 .third-hero-left p{
-	line-height: 1.5rem;
+	line-height: 1.5rem ;
 }
 
 .second-btn button{
 	margin-top:.8rem;
 }
-
-
-/* This is the styling for the third section */
-
 footer{
 	background-color: hsl(243, 87%, 12%);
 	color: #fff;
 	padding: 2rem 7rem 1rem 2rem;
-}
+} 
 
 .footer-body{
 	display: flex;
@@ -247,4 +242,100 @@ a .fa-brands{
 
 i:hover{
 	border: 1px solid rgb(116, 172, 246);
+}
+
+
+@media screen and (max-width:600px){
+  header, .first-hero-section, .second-hero-section {
+    padding: 0 20px;
+} 
+.nav-section a {
+  padding: 0 0.4rem;
+  font-size: 0.7rem;
+}
+.header-right-links {
+  gap: 1rem;
+}
+.image-header img {
+  width: 50%;
+}
+.first-hero-section, .second-hero-section {
+  flex-direction: column-reverse;
+}
+.first-hero-left h1{
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+.first-hero-left p{
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
+}
+.first-hero-left p, .first-hero-left form, h2, .second-hero-left p {
+  width: 100%;
+}
+.form-field input[type="email"] {
+  width: 100%;
+}
+.form-field button {
+  width: 100%;
+  margin-top: 0.8rem;
+}
+.second-hero-left h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  padding-top: 5rem;
+}
+.second-hero-left p{
+  font-size: 0.9rem;
+ }
+ .second-hero-left p:first-of-type{
+    padding: 1.5rem 0;
+ }
+ .links{
+  text-align: center;
+ }
+.testimonial {
+  width: 100%;
+  margin: 3rem 0;
+}
+footer{
+  padding: 2rem;
+}
+.foot {
+  margin: 1.2rem 0;
+}
+.foot-content h3{
+  font-size: 0.7rem; 
+}
+.foot-content p{
+padding:0.1rem 0 !important;
+}
+.third-hero-section {
+  flex-direction: column;
+}
+#left-h3, #left-p{
+  width: 100%;
+  text-align: center;
+}
+  .third-hero-right, input[type="email"] {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .second-btn, button{
+      width: 100%; 
+  }  
+  .details-section, #column{
+    display: flex;
+    flex-direction: column;
+  }
+  ul{
+    margin: 1rem 0;
+  }
+  .socials{
+    margin:1.5rem auto;
+  }
+
 }
